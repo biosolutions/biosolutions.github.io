@@ -1,0 +1,1243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Bio Solutions</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <!--
+
+    TemplateMo 551 Stand Blog
+
+    https://templatemo.com/tm-551-stand-blog
+
+    -->
+
+    <style>
+        .sidebyside {
+            width: 800px;
+            height: 400px;
+            padding: 0px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .item {
+            width: 420px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .submain {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            /*word-break: break-all;*/
+        }
+
+        .row {
+            margin: 10px -16px;
+        }
+
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+                padding: 8px;
+            }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #ddd;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+            .btn:hover {
+                background-color: #6A5ACD;
+            }
+
+            .btn.active {
+                background-color: #6A5ACD;
+                color: white;
+            }
+    </style>
+
+    <style>
+        .container {
+            position: relative;
+            font-family: Arial;
+        }
+
+        .text-block {
+            position: center;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+    <style>
+        .hovereffect {
+            width: 100%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
+
+            .hovereffect .overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-color: rgba(0,0,0,0.5);
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out
+            }
+
+            .hovereffect img {
+                display: block;
+                position: relative;
+                -webkit-transition: all .4s linear;
+                transition: all .4s linear;
+            }
+
+            .hovereffect h2 {
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                position: relative;
+                font-size: 17px;
+                background: rgba(0,0,0,0.6);
+                -webkit-transform: translatey(-100px);
+                -ms-transform: translatey(-100px);
+                transform: translatey(-100px);
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                padding: 10px;
+            }
+
+            .hovereffect a.info {
+                text-decoration: none;
+                display: inline-block;
+                text-transform: uppercase;
+                color: #fff;
+                border: 1px solid #fff;
+                background-color: transparent;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                margin: 50px 0 0;
+                padding: 7px 14px;
+            }
+
+                .hovereffect a.info:hover {
+                    box-shadow: 0 0 5px #fff;
+                }
+
+            .hovereffect:hover img {
+                -ms-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+
+            .hovereffect:hover .overlay {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+            .hovereffect:hover h2, .hovereffect:hover a.info {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -ms-transform: translatey(0);
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+            }
+
+            .hovereffect:hover a.info {
+                -webkit-transition-delay: .2s;
+                transition-delay: .2s;
+            }
+    </style>
+
+   
+
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+
+                        /**/</script>
+</head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2><span style="color:#123c70">Bio</span> <span style="color:#d47f35">Solutions</span></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">
+                          Home
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         aria-haspopup="true" aria-expanded="false" href="blog.html">Products<span class="caret"></span></a>
+                      <ul class="dropdown-menu ">
+
+
+                          <li>
+                              <a class="dropdown-item" href="products.html">CCTVC Products</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="Biometrics.html">Biometrics Products</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="intercom.html">Intercom</a>
+                          </li>
+                      </ul>
+                  </li>
+
+
+                  <li class="dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                         aria-haspopup="true" aria-expanded="false" href="blog.html">Software<span class="caret"></span></a>
+                      <ul class="dropdown-menu ">
+
+
+                          <li>
+                              <a class="dropdown-item" href="products.html">Timesheet</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="Biometrics.html">School Desk</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="intercom.html">DMP Server</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="intercom.html">SDK</a>
+                          </li>
+                      </ul>
+                  </li>
+
+
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="solutions.html">Solutions</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+      <section class="page-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <!--<h4>Post Details</h4>-->
+                  <h2>Biometric Products</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Banner Ends Here -->
+
+
+    <section class="blog-posts grid-system">
+      
+
+
+            <div class="submain">
+
+
+                <!--<hr>-->
+                <!--<h2> Sub Categories</h2>-->
+
+
+                <div class="sidebyside">
+
+                    <!--<div class="centerDiv">-->
+                    <div class="item">
+                        <center><h2>Fingerprint</h2></center>
+                        <div class="col-sm-3 col-md-auto col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+
+                                <img class="img-responsive"
+                                     src="assets/images/Biometrics/fingerprint.jpg" alt="fingerprint" style="width:100%" height="200">
+
+                                <h5 style="color: #f48840">N-Series &nbsp &nbsp  V-Series</h5>
+                                <!--<p>2 MP Full HD IR Vandal Dome Camera - 30Mtr.</p>-->
+
+                                <div class="overlay">
+                                    <h2> N-Series &nbsp &nbsp  V-Series</h2>
+                                    <a class="info" href="#Fingerprint" onclick="filterSelection('2MP')"> View here</a>
+                                    <!--<button class="btn" onclick="filterSelection('2MP')"> 2 MP - Network Camera</button>-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <center><h2>Face</h2></center>
+                        <div class="col-sm-3 col-md-auto col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive"
+                                     src="assets/images/Biometrics/face.png" alt="face" style="width:100%" height="200">
+                                <h5 style="color: #f48840">
+                                    N-Series
+                                </h5>
+                                    <!--<p>2 MP Full HD IR Vandal Dome Camera - 30Mtr.</p>-->
+                                    <div class="overlay">
+                                        <h2> N-Series</h2>
+                                        <a class="info" href="#Face" onclick="filterSelection('3MP')"> View here</a>
+                                    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="sidebyside">
+
+                    <!--<div class="centerDiv">-->
+                    <div class="item">
+                        <center><h2>Reader</h2></center>
+                        <div class="col-sm-3 col-md-auto col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+
+                                <img class="img-responsive"
+                                     src="assets/images/Biometrics/RFID.png" alt="fingerprint" style="width:100%" height="200">
+
+                                <h5 style="color: #f48840"> FP Reader &nbsp &nbsp Card Reader</h5>
+                                <!--<p>2 MP Full HD IR Vandal Dome Camera - 30Mtr.</p>-->
+
+                                <div class="overlay">
+                                    <h2> FP Reader &nbsp &nbsp  Card Reader</h2>
+                                    <a class="info" href="#Reader" onclick="filterSelection('4MP')"> View here</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <center><h2>Accessories</h2></center>
+                        <div class="col-sm-3 col-md-auto col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive"
+                                     src="assets/images/Biometrics/accessories.jpg" alt="face" style="width:100%" height="200">
+                                <h5 style="color: #f48840">Card &nbsp &nbsp  Lock &nbsp &nbsp Bracket &nbsp &nbsp Switch </h5>
+                                <!--<p>2 MP Full HD IR Vandal Dome Camera - 30Mtr.</p>-->
+                                <div class="overlay">
+                                    <h2>Card &nbsp &nbsp  Lock &nbsp &nbsp Bracket &nbsp &nbsp Switch</h2>
+                                    <a class="info" href="#Accesories" onclick="filterSelection('5MP')"> View here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+
+
+
+                <div class="row">
+                    <div id="Fingerprint">
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_1.png" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-E90 Pro + B</p>
+                                    <p>PRECISE AND SECURE</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_2.png" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-WL20</p>
+                                    <p>GO WIRELESS</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_3.png" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-X990</p>
+
+                                    <p>Most Versatile Model</p>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_4.png" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-BioAccess</p>
+
+                                    <p>DIVERSITY IN SECURITY</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_5.png" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-BM20 + ID Pro</p>
+
+                                    <p>BUILT AS BASIC</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_6.jpg" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-BM30W Pro</p>
+                                    <p>PRECISE AND SECURE</p>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_7.png" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-BM22</p>
+
+                                    <p>LIFT UP STYLE QUOTIENT</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_8.jpg" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-K30</p>
+
+                                    <p>
+                                        BIOMETRIC FINGER VERIFICATION
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_9.jpg" alt="Car" style="width:100%">
+                                <center>
+                                    <p class="color-1 p2">N-BM300 W</p>
+
+                                    <p>SIZE MATTERS</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_10.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Access10</p>
+
+                                    <p>Access Control System</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_nseries_11.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-FR12</p>
+
+                                    <p>Fingerprint & RFID Exit Reader</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_vseries_12.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">V-TA45</p>
+
+                                    <p>ELEGANCE & SMARTNESS</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_vseries_13.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">V-AX18</p>
+
+                                    <p>SAFE GUARD IN STYLE</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_vseries_14.jpg" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">V-AX14</p>
+
+                                    <p>DYNAMIC IN EVERY WAY</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_vseries_15.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">V-AX11</p>
+
+                                    <p>DURABLE & SHOCK PROOF</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_vseries_16.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">V-AX16</p>
+
+                                    <p>SIMPLICITY MEETS SMARTNESS</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 2MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Fingerprint/finprt_vseries_17.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">V-AX27</p>
+
+                                    <p>POE LOADED, ULTIMATE</p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Face">
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_1.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-BioAccess Face</p>
+
+                                    <p>DIVERSITY IN SECURITY</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_2.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-Uface 602</p>
+
+                                    <p>MODEL OF THE DECADE</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_3.jpg" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-UltraFace</p>
+
+                                    <p>Strong Light</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_4.jpg" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-BM70W Pro</p>
+
+                                    <p>ULTIMATE MULTI BIO</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_5.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-Z90W Pro</p>
+
+                                    <p>ULTIMATE PROFESSIONAL MODEL</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_6.jpg" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-Bio101 W</p>
+
+                                    <p>ADVANCE MULTI BIO</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_7.jpg" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-BM260W Pro</p>
+
+                                    <p>INTERMEDIATE MULTI BIO</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_8.jpg" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-UFACE302</p>
+
+                                    <p>PRO MULTI BIO</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_9.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-G4W</p>
+
+                                    <p>MADE TO DOMINATE</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_10.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-X990 Face</p>
+
+                                    <p>Most Versatile Model</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_11.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-BM22 Face</p>
+
+                                    <p>
+                                        LIFT UP STYLE QUOTIENT
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_12.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-BM160W</p>
+
+                                    <p>DYNAMIC MULTIBIO</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_13.jpg" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">N-Pro Face</p>
+
+                                    <p>MAXIMIZING LIMITS</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_14.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Speed Face 8 TM</p>
+
+                                    <p>BLEND OF HYGINE & ATTENDANCE</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_15.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Speed Face 8</p>
+
+                                    <p>MADE FOR THE GREAT</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_16.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Speed Face 7</p>
+
+                                    <p>
+                                        CLASSY AS IT SOUNDS
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_17.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Speed Face 5</p>
+
+                                    <p>Lighting Fast AI Face Detection Technology</p>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 3MP">
+                            <div class="content">
+
+
+                                <img src="assets/images/Biometrics/Face/face_nseries_18.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Speed Face 4</p>
+
+                                    <p>
+                                        Not Slow Anymore
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Reader">
+                        <div class="column 4MP">
+                            <div class="content">
+
+
+
+
+                                <img src="assets/images/Biometrics/Reader/V-R12.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">V-R12</p>
+
+
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Accesories">
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/accesss.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Thick Card</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Thin Card.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Thin Card</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/EM Lock.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">EM Lock - EL 280GD</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/EM Lock with Feedback.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">EM Lock with Feedback</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Bolt Lock - BL B005 5C.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Bolt Lock - BL B005 5C</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Drop Bolt Lock.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Bolt Lock - BL 3300 AF</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/GBL-3300-AW.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">GBL-3300-AW</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Strike Lock.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Strike Lock</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/L Bracket.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">L Bracket</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/U-Bracket for EML.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">U-Bracket</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/ZL Bracket.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">ZL Bracket</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/U Bracket for Bolt Lock.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">U Bracket for Bolt Lock</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Exit Switch 1x3.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Switch 1x3</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Exit Switch.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Exit Switch 3x3</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Plastic Exit Switch.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Plastic Exit Switch</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/No Touch Exit Sensor.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">No Touch Exit Sensor</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <div class="column 5MP">
+                            <div class="content">
+
+
+
+                                <img src="assets/images/Biometrics/Accesories/Wireless Remote Exit Key.png" alt="Car" style="width:100%" height="385">
+                                <center>
+                                    <p class="color-1 p2">Wireless Remote Exit Key</p>
+
+                                    <!--<p>3 MP WDR Box Camera</p>-->
+                                </center>
+                            </div>
+                        </div>
+                        <!--<div class="column 3MP">
+                    <div class="content">
+
+
+                        <img src="images/Biometrics/Face/face_nseries_18.png" alt="Car" style="width:100%" height="385">
+                        <center>
+                            <p class="color-1 p2">CP-UNC-BH31-VMD</p>
+
+                            <p>3 MP WDR Box Camera</p>
+                        </center>
+                    </div>
+                </div>-->
+                    </div>
+                </div>
+            </div>
+    
+
+    </section>
+
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="social-icons">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Dribbble</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+              <div class="copyright-text">
+                  <p>© 2020 <a href="#" class="link">BIO Solutions</a> </p>
+                  <p> &nbsp;  <a href="#" class="link"></a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>
